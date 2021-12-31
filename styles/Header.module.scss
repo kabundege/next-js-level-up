@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+.header{
+    @include flexer();
+    padding: 1em 0;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-weight: 900;
+        margin: 0;
+    }
+
+    span{
+        font-weight: 100;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: $mutedText;
+        margin-top: -.9em;
+    }
+
+}
+
+.menu{
+    @include flexer();
+    list-style: none;
+    flex: .3;
+    margin: 0;
+    li{
+        @include flexer();
+        a{
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-left: .3em;
+        }
+    }
+}
